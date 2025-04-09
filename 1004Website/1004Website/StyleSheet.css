@@ -1,0 +1,55 @@
+BODY {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.top-area {
+    grid-column: 1 / span 10;
+    grid-row: 1 / span 2;
+    background-color: rgb(125, 142, 255);
+}
+
+.left-area {
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 8;
+}
+
+.right-area2 {
+    grid-column: 6 / span 5;
+    grid-row: 3 / span 8;
+
+}
+/* Because my HTML file contains all its required elements, devise a way to hide & unhide elements on demand. The use of !important means that hide overrides other display settings.
+    This is beneficial because I won't have to remove display classes and reinstate them.
+*/
+.hide {
+    display: none !important;
+}
+
+input[type = "button"] {
+    background-color: lightblue;
+    font-size: larger;
+}
+
+input[type = "password"] {
+    background-color: white;
+    font-size: larger;
+    
+}
+
+h3 {
+    font-size: x-large !important;
+
+}
+h1 {
+    font-size: xx-large;
+}
+
+.central {
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-size: larger;
+}

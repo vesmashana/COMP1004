@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+    <link rel="StyleSheet" href="StyleSheet.css">
+<META NAME="GENERATOR" Content="Microsoft Visual Studio">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+    <!-- Base logic: Identify and initialise all elements the website will need and display them according to design. Retain class settings for appearance where possible to avoid having to write unnecessary code.-->
+    <!--Note here that image ID names overlap with paragraph element names, this is because I don't intend to use them. -->
+    <img src="Resource-Files/TextScam.png" class="hide" id="textScam" style="grid-column: 1 /span 4; grid-row: 3 / span 7" usemap="#textMap">
+    <map name="textMap">
+        <area shape="rect" coords="84, 63, 185, 78" id="textAddress" href="#" alt="1">
+        <area shape="rect" coords="16, 269, 171, 296" id="webAddress" href="#" alt="2">
+        <area shape="rect" coords="17, 336, 196, 412" id="instructions" href="#" alt="3">
+        <area shape="rect" coords="17, 136, 107, 159" id="customer" href="#" alt="4">
+    </map>
+    <img src="Resource-Files/HSBCLogin.png" class="hide" id="HSBCLogin" style="grid-column: 1 / span 10; grid-row: 3/ span 6" usemap="#webMap">
+    <map name="webMap">
+        <area shape="rect" coords="771, 20, 818, 39" id="login" href="#" alt="1">
+    </map>
+    <img src="Resource-Files/email.png" class="hide" id="email" style="grid-column: 1 /span 6; grid-row: 3 / span 7" usemap="#emailMap">
+    <map name="emailMap">
+        <area shape="rect" coords="78, 34, 188, 46" id="emailAddress" href="#" alt="1" />
+        <area shape="rect" coords="502,534, 552, 546" id="link" href="#" alt="2" />
+        <area shape="rect" coords="486, 436, 604, 452" id="name" href="#" alt="3" />
+        <area shape="rect" coords="659, 521, 787, 579" id="mbi" href="#" alt="4" />
+    </map>
+    <img src="Resource-Files/shop.png" class="hide" id="shop" style="grid-column: 1 /span 7; grid-row: 3 / span 6" usemap="#shopMap">
+    <map name="shopMap">
+        <area shape="rect" coords="387, 182, 537, 205" id="shopnow" href="#" alt="1" />
+        <area shape="rect" coords="180, 277, 242, 344" id="threefingers" href="#" alt="2" />
+        <area shape="rect" coords="105, 2, 260, 23" id="nonsecure" href="#" alt="3" />
+    </map>
+    <img src="Resource-Files/Popup-final.png" class="hide" id="advertisement" usemap="#adMap" style="grid-column: 1 /span 7; grid-row: 3 / span 7">
+    <map name="adMap">
+        <area shape="rect" coords="74, 3, 334, 15" id="url" href="#" alt="5" />
+        <area shape="rect" coords="648, 125, 681, 154" id="x" href="#" alt="1" />
+        <area shape="rect" coords="360, 131, 678, 419" id="ad" href="#" alt="2" />
+        <area shape="rect" coords="420, 179, 613, 237" id="aarvel" href="#" alt="4" />
+        <area shape="rect" coords="525, 157, 556, 172" id="sturies" href="#" alt="3" />
+    </map>
+    <img src="Resource-Files/TextScam.png" class="hide" alt="text">
+    <h1 class="top-area central" id="header">Cyber Security Risk Assessment</h1>
+    <h3 class="left-area" style="background-color: rgba(51, 50, 55, 0.2)" id="1">Password Strength Analysis</h3>
+    <h3 class="right-area2" style="background-color: rgba(51, 50, 55, 0.3)" id="2">Test: How good are you at recognising threats?</h3>
+    <h3 class="hide" id="subheading1" style="grid-column: 1 / span 5; grid-row: 6"></h3>
+    <h3 class="hide" id="subheading2" style="grid-column: 6 / span 5; grid-row: 6"></h3>
+    <input type="button" id="button1" style="grid-column: 3; grid-row: 9; width: 200px" />
+    <input type="button" id="button2" style="grid-column: 8; grid-row: 9; width: 200px" />
+    <input type="button" id="next" class="hide" style="grid-column: 7; grid-row: 2" />
+    <input type="password" id="userPswd" style="grid-column: 4 /span 3; grid-row: 2" class="hide" placeholder="Enter password..." />
+    <input type="text" id="enterName" name="enterName" class="hide" style="grid-column: 5; grid-row: 5">
+    <button class="hide" id="submitButton" style="grid-column: 6; grid-row: 5">Submit</button>
+    <p id="3" style="grid-column: 1 / span 5; grid-row: 4 / span 2; margin: 2px;">
+        This section consists of two elements which assess how likely a hacker would be to successfully 'crack' your password. The first simulates
+        how long it would take a hacker to find your password whilst trying every possible combination. This is called a bruteforce attack. The second will test your password against a database of common passwords
+        to see if yours is in it. This is in reference to a dictionary attack, where hackers attempt to gain access to your account by trying thousands of common passwords. It is important to understand these concepts in conjunction because an attacker could use either one. Get protected - your bank account details could be on the line.
+    </p>
+    <h2 class="hide" style="grid-column: 3 / span 6; grid-row: 3; color: red" id="redflags">Red Flags</h2>
+    <h2 class="hide" style="grid-column: 7 / span 3; grid-row: 3; color: green" id="greenflags">Green Flags</h2>
+    <p id="4" style="grid-column: 6 / span 5; grid-row: 4 / span 2;">This section is a quiz to see your vulnerability to attacks. Respond how you would normally, then click to highlight the areas which are indicative that the source is trustworthy or untrustworthy. The aim of this exercise is to provide you with personalised results, rather than reading an endless block of text to learn.</p>
+    <p id="5" style="grid-column: 1 / span 4; grid-row: 7 / span 2;">Interested? Click the button below! Note that at the end of the exercise, you will be prompted to enter the other section if you wish to</p>
+    <p id="6" class="hide" style="grid-column: 1 / span 4; grid-row: 8;">h</p>
+    <p id="7" class="hide" style="grid-column: 6 / span 5; grid-row: 4;"></p>
+    <p id="8" class="hide" style="grid-column: 6 / span 5; grid-row: 5"></p>
+    <p id="9" style="grid-column: 6 / span 4; grid-row: 7 / span 2;">Interested? Click the button below! Note that at the end of the exercise, you will be prompted to enter the other section if you wish to.</p>
+    <p id="nh" class="hide" style="position: absolute; padding-top: 565px; padding-left: 485px; font-size: smaller; pointer-events: none;"></p>
+    <p id="Q1" class="hide" style="grid-column: 3 / span 6; grid-row: 4"></p>
+    <p id="Q2" class="hide" style="grid-column: 3 / span 6; grid-row: 5"></p>
+    <p id="Q3" class="hide" style="grid-column: 3 / span 6; grid-row: 6"></p>
+    <p id="Q4" class="hide" style="grid-column: 3 / span 6; grid-row: 7"></p>
+    <input type="button" class="hide" id="simButton1" />
+    <input type="button" class="hide" id="simButton2" />
+    <input type="button" class="hide" id="simButton3" />
+    <input type="button" class="hide" id="simButton4" />
+    <input type="button" class="hide" id="stuck" style="grid-column: 10; grid-row: 3" value="Stuck?" />
+    <div id="control"></div>
+
+    <script src="Businesslayer.js"></script>
+
+</BODY>
+</HTML>
